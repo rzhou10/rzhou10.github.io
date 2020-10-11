@@ -25,6 +25,10 @@
 
     <h3 class="footer"> {{ time }} </h3>
 
+    <div class="footer">
+      <h3>Website name taken from the song Black Marten's Trace by Kalmah.</h3>
+    </div>
+
   </div>
 </template>
 
