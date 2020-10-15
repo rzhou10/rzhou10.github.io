@@ -5,10 +5,12 @@
       <a class="highlight" href="https://www.sphereco.com/">Sphere Technology Solutions</a>. Casual Minecraft player,
       movie watcher, and music listener <a class="highlight" href="https://open.spotify.com/playlist/7zSUBKPAL7VYU2ybmXSf3t">\m/</a>.
     </h1>
-    <Projects projects=""/>
+
+    <projects :projects="projectList.projectList"/>
     <h1>
       You're always welcome to contact me at the following
     </h1>
+
     <div class="footer">
       <a :href="pdf" target="_blank">
         <img class="external" title="Resume" src="./assets/resumeIcon.png" alt="Resume icon">
@@ -35,6 +37,7 @@
 <script>
 import Projects from './components/Projects.vue';
 import pdf from './pdfs/resume.pdf';
+import projectList from './project-list/projects';
 
 export default {
   name: 'App',
@@ -44,7 +47,8 @@ export default {
   data() {
     return {
       time: '',
-      pdf: pdf
+      pdf: pdf,
+      projectList: projectList
     }
   },
   mounted() {
