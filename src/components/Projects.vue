@@ -35,9 +35,19 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  background-color: yellow;
+}
+
+h2 {
+  text-shadow: 1px;
+}
+
 #projectList {
-  outline: solid thin black;
-  padding: 5%;
-  margin-top: 2%;
+  border: solid thin black;
+  padding: 8%;
+  margin-top: 5%;
+  box-shadow: 10px 10px;
+  border-radius: 10px;
 }
 </style>
